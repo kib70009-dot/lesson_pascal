@@ -1,6 +1,8 @@
 program welcome;
 
-{$APPTYPE CONSOLE}
+{$ifdef MSWINDOWS}
+  {$APPTYPE CONSOLE}
+{$endif}
 
 var
   StrMessage: string;
